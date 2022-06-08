@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Installing node_modules
-      - run: npm i
+        uses: npm i
       - run: prettier
       - run: lint
       - name: Running tests
-      - run: test
+        uses: npm run test
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: echo "💡  The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
