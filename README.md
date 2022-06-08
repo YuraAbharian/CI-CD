@@ -100,3 +100,24 @@ app.listen(PORT, () => {
 ```
 
 Code from `index.js`
+
+After you've prepared everything you can create [a new GitHub repository](https://github.com/new)
+
+<div align="center">
+    <figure>
+        <img src="assets/create_repo.png" width="590" height="509" alt="a new repo">
+        <figcaption>Изображение №5: Create a new repository</figcaption>
+    </figure>
+</div>
+
+After you have created a new repository we can start to configure CI pipeline.
+Go to your new repository and then to the Actions tab
+
+<div align="center">
+    <figure>
+        <img src="assets/repo:actions.png" width="1000" height="509" alt="actions tab">
+        <figcaption>Изображение №6: Actions tab</figcaption>
+    </figure>
+</div>
+
+Then follow this [link](https://docs.github.com/en/actions/quickstart) and 
