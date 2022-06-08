@@ -120,4 +120,4 @@ Go to your new repository and then to the Actions tab
     </figure>
 </div>
 
-Then follow this [link](https://docs.github.com/en/actions/quickstart) and 
+Then follow this [link](https://docs.github.com/en/actions/quickstart) and

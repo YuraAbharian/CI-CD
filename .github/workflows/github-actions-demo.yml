@@ -1,11 +1,11 @@
 name: CI/CD configure tutorial
-on: [ push ]
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [16.x]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
