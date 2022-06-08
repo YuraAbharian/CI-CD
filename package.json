@@ -1,0 +1,25 @@
+{
+  "name": "cicd",
+  "version": "1.0.0",
+  "description": "CI/CD example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraAbharian/CI-CD.git"
+  },
+  "author": "Yura Abharian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraAbharian/CI-CD/issues"
+  },
+  "homepage": "https://github.com/YuraAbharian/CI-CD#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
