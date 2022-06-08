@@ -11,8 +11,10 @@ jobs:
         uses: actions/checkout@v3
       - name: Installing node_modules
         run: npm install
-      - run: prettier
-      - run: lint
+      - name: Running Prettier
+        run: npm run prettier
+      - name: Running Linter
+        run: npm run lint
       - name: Running tests
         run: npm run test
       - run: echo "🍏 This job's status is ${{ job.status }}."
