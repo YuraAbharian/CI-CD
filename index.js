@@ -1,5 +1,5 @@
 const express = require('express')
-const serverless = require("serverless-http")
+const serverless = require('serverless-http')
 
 const sum = require('./helper/sum')
 
@@ -15,7 +15,7 @@ router.get('/sum', (req, res) => {
   res.send(`RESULT: ${sum(a, b)}`)
 })
 
-app.use(`/.netlify/functions/api`, router);
+app.use(`/.netlify/functions/api`, router)
 
 module.exports = app
 module.exports.handler = serverless(app)
