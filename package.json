@@ -2,7 +2,7 @@
   "name": "cicd",
   "version": "1.0.0",
   "description": "CI/CD example",
-  "main": "index.js",
+  "main": "api.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint  . --ext .js",
     "lint:fix": "./node_modules/.bin/eslint --fix . --ext .js",
@@ -32,6 +32,5 @@
     "@types/express": "^4.17.13",
     "eslint": "^8.17.0",
     "jest": "^28.1.1"
-  },
-  "jest": {}
+  }
 }
