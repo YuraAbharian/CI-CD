@@ -9,7 +9,9 @@ const router = express.Router()
 router.get('/test', (req, res) => {
   res.send('Hello World')
 })
-router.use(express.static('dist'));
+
+router.use(express.static('dist'))
+
 router.get('/sum', (req, res) => {
   const { a, b } = req.query
   res.send(`RESULT: ${sum(a, b)}`)
