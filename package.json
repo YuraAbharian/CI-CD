@@ -2,15 +2,15 @@
   "name": "cicd",
   "version": "1.0.0",
   "description": "CI/CD example",
-  "main": "api.js",
+  "main": "src/api.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint  . --ext .js",
     "lint:fix": "./node_modules/.bin/eslint --fix . --ext .js",
     "prettier": "./node_modules/.bin/prettier --check .",
     "prettier:fix": "./node_modules/.bin/prettier --write .",
     "test": "./node_modules/.bin/jest",
-    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve .",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build ."
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "repository": {
     "type": "git",

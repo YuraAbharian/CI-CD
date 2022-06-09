@@ -1,7 +1,7 @@
 const express = require('express')
 const serverless = require('serverless-http')
 
-const sum = require('./helper/sum')
+const sum = require('../helper/sum')
 
 const app = express()
 const router = express.Router()
