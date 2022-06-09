@@ -1,5 +1,9 @@
 name: CI/CD configure tutorial
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -9,12 +13,12 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Installing node_modules
+      - name: installing node_modules
         run: npm install
-      - name: Running Prettier
+      - name: running Prettier
         run: npm run prettier
-      - name: Running Linter
+      - name: running Linter
         run: npm run lint
-      - name: Running tests
+      - name: running tests
         run: npm run test
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "This job's status is ${{ job.status }}."
